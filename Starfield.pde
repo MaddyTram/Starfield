@@ -2,8 +2,8 @@ Particle[] p = new Particle[700];
 void setup() {
   size(400, 400);
   noStroke();
-  p[699] = new Meteor();
-  for (int i = 0; i < p.length-1; i++) {
+  p[0] = new Meteor();
+  for (int i = 1; i < p.length; i++) {
     p[i] = new Particle();
   }
 }
